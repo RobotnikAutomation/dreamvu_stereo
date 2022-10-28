@@ -2,7 +2,7 @@ Publish PAL stereo images to ROS1 Topics
 
 Code greatly abridge from DreamVu's `dreamvu_pal_navigation` package.
 
-- First download PAL SDK and run install script.
+- First download PAL SDK and run install script: see  [DreamVu / PAL-USB](https://github.com/DreamVu/PAL-USB) 
 
 - Git clone this package into catkin_ws/src
 
