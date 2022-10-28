@@ -4,7 +4,7 @@ Code greatly abridge from DreamVu's `dreamvu_pal_navigation` package.
 
 - First install CUDA and TensorRT using the instructions at  [DreamVu / PAL-USB](https://github.com/DreamVu/PAL-USB) 
 
-- From [Dreamvu Software](https://dreamvu.com/software/download) download the `pal` file without GPU software:
+- From [Dreamvu Software](https://dreamvu.com/software) download the `pal` file without GPU software:
 
 PAL USB SDK CPU 	Intel i5/i7/i9 	Ubuntu 18.04/ 20.04 	4.1
 
