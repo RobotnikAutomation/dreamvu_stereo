@@ -25,5 +25,5 @@ $ source ./devel/setup.bash
         
 - To launch camera and tf nodes, and display stereo images in rviz, run
 ```
-$ roslaunch dreamvu_stereo scan_rviz.launch
+$ roslaunch dreamvu_stereo stereo.launch
 ```
