@@ -1,5 +1,5 @@
 <launch>
   <node pkg="tf2_ros" type="static_transform_publisher" name="camera" args="0 0 0 0 0 0  base_link pal" />
-  <node name="dreamvu_stereo_node" pkg="dreamvu_stereo" type="stereo_node" output="screen" />
+  <node name="stereo" pkg="dreamvu_stereo" type="stereo" output="screen" />
   <node name="rviz" pkg="rviz" type="rviz" args="-f pal -d $(find dreamvu_stereo)/launch/stereo.rviz" output="screen"/>
 </launch>

@@ -20,7 +20,7 @@ catkin_package(
    CATKIN_DEPENDS cv_bridge image_transport roscpp rospy sensor_msgs std_msgs message_generation nav_msgs geometry_msgs
   message_runtime
 )
-set(PAL_INCLUDE_DIR /home/robotnik/DreamVu/PAL/include )
+set(PAL_INCLUDE_DIR $ENV{HOME}/DreamVu/PAL/include )
 set(PAL_LIBRARY /usr/local/lib/libPAL.so )
 include_directories(
         ${PAL_INCLUDE_DIR}
@@ -48,6 +48,6 @@ set(CATKIN_LIBRARIES libudev.so cv_bridge.so image_transport.so message_filters.
 find_package(PkgConfig REQUIRED)
 pkg_search_module(PKG_OPENCV REQUIRED opencv)
 
-add_executable(stereo_node /usr/src/tensorrt/bin/common/logger.o src/stereo_node.cpp)
-add_dependencies(stereo_node ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
-target_link_libraries(stereo_node ${CATKIN_LIBRARIES} ${PKG_OPENCV_LDFLAGS} ${V4l2_LIBRARIES} ${PAL_LIBRARY})
+add_executable(stereo src/stereo_node.cpp )
+add_dependencies(stereo ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
+target_link_libraries(stereo ${CATKIN_LIBRARIES} ${PKG_OPENCV_LDFLAGS} ${V4l2_LIBRARIES} ${PAL_LIBRARY})
